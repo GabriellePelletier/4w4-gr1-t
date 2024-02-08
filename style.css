@@ -12,11 +12,15 @@ Text Domain: theme-gabrielle
 
 */
 :root {
-  --couleur-arriere-entete: #ed8181;
-  --couleur-arriere-accueil: #c4e69a;
-  --couleur-arriere-evenement: #a0dbe6;
-  --couleur-arriere-galerie: #8890e0;
-  --couleur-arriere-footer: #ecb9f4;
+  --couleur-arriere-entete: #7078be83;
+  --couleur-arriere-accueil: #5781ae85;
+  --couleur-arriere-evenement: #63b1bb82;
+  --couleur-arriere-galerie: #646dba7d;
+  --couleur-arriere-footer: #0d090da4;
+  --transparence-h1: rgba(17, 22, 43, 0.631);
+  --transparence-h1-valeur: 0.7;
+  --transparence-section: 0.3;
+  --valeur-largeur-galerie: 70vw;
 }
 
 * {
@@ -33,34 +37,49 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
+  min-height: 60vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  border: 1px solid grey;
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: rgba(49, 63, 92, var(--transparence-h1-valeur));
+}
+
+#entete,
+#footer {
+  min-height: 20vh;
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
+  color: var(--transparence-h1);
+  background-image: url(https://img.freepik.com/photos-gratuite/belles-fleurs-gouttes-eau_23-2150705688.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(80%);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: rgba(49, 86, 92, var(--transparence-h1-valeur));
 }
 
 #galerie {
+  height: var(--valeur-largeur-galerie);
   background-color: var(--couleur-arriere-galerie);
+  color: rgba(49, 51, 92, var(--transparence-h1-valeur));
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: rgba(255, 255, 255, var(--transparence-h1-valeur));
 }
 
 h1 {
