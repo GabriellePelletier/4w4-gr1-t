@@ -17,7 +17,7 @@ Text Domain: theme-gabrielle
   --couleur-arriere-evenement: #63b1bb82;
   --couleur-arriere-galerie: #646dba7d;
   --couleur-arriere-footer: #0d090da4;
-  --transparence-h1: rgba(17, 22, 43, 0.631);
+  --transparence-h: rgba(17, 22, 43, 0.631);
   --transparence-h1-valeur: 0.7;
   --transparence-section: 0.3;
   --valeur-largeur-galerie: 70vw;
@@ -59,7 +59,7 @@ body {
 }
 
 #entete {
-  color: var(--transparence-h1);
+  color: var(--transparence-h);
   background-image: url(https://img.freepik.com/photos-gratuite/belles-fleurs-gouttes-eau_23-2150705688.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,4 +91,20 @@ h1 {
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 400;
+}
+
+h3 {
+  color: var(--transparence-h);
+}
+
+h4 {
+  color: var(--transparence-h);
+}
+
+h5 {
+  color: var(--transparence-h);
+}
+
+h6 {
+  color: var(--transparence-h);
 }/*# sourceMappingURL=style.css.map */
