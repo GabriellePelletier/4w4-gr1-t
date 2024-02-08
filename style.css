@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*
+
+Theme Name: Theme Gabrielle
+Author: Gabrielle Pelletier
+Author URI: https://wordpress.org/
+Description: Thème de base développé dans le cours 4W4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-gabrielle
+
+*/
+:root {
+  --couleur-arriere-entete: #ed8181;
+  --couleur-arriere-accueil: #c4e69a;
+  --couleur-arriere-evenement: #a0dbe6;
+  --couleur-arriere-galerie: #8890e0;
+  --couleur-arriere-footer: #ecb9f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Prompt", sans-serif;
+}
+
+.global {
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  flex: 0 1 900px;
+  border: 1px solid grey;
+}
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+}
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+}
+
+h1 {
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
